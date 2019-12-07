@@ -89,6 +89,6 @@ app.post("/api/characters", function(req, res) {
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT || 5000, function() {
+app.listen(PORT || process.env.PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
